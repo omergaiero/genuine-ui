@@ -1,0 +1,16 @@
+# Secrets (defensive — none currently)
+.env
+.env.*
+*.key
+credentials.json
+
+# Dependencies (defensive — in case code is added later)
+node_modules/
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# OS / editor
+.DS_Store
+.claude/settings.local.json
