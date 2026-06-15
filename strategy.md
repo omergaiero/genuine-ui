@@ -129,8 +129,24 @@ Target companies with:
 
 ---
 
+## Agent Experience — A Design Constraint, Not a Feature
+
+By 2026, PMs and designers increasingly work *through* agents — Claude, Cursor, ChatGPT — rather than directly inside dashboards. This shifts what the product needs to be from "a pretty UI with an API bolted on" to "an API that happens to have a UI."
+
+Two implications, both load-bearing:
+
+**1. The dashboard is one client of the API, not the product itself.**
+Every insight, hypothesis, rule, and adaptation outcome must be queryable through an MCP server or API. A designer asking Claude *"refine this screen — what's wrong with it?"* should resolve to a structured call into our system. The agent assembles the answer; we supply the intelligence. Build the API first; the dashboard later.
+
+**2. Discovery happens through agents.**
+When a PM asks Claude *"how should I change this screen to fit this user segment?"* — our system should be the tool Claude reaches for. That's distribution. Being agent-callable is the modern equivalent of being indexed in Google.
+
+**Concrete consequence for MVP:** the dashboard and the MCP/API surface are built in parallel from day one. Not "ship dashboard, add API in v2." The contract between intelligence layer and consumer must be machine-readable from the start.
+
+---
+
 ## The Three-Year View
 
-In 2028, "adaptive UI" will be table stakes for serious SaaS products. The designer's job will shift from drawing screens to defining design systems and curating AI outputs. Continuous data-driven micro-adaptations will replace periodic big-bang redesigns.
+In 2028, "adaptive UI" will be table stakes for serious SaaS products. The designer's job will shift from drawing screens to defining design systems and curating AI outputs. Continuous data-driven micro-adaptations will replace periodic big-bang redesigns. Most product work will be initiated and orchestrated through agents — the human curates, the agent executes.
 
 This product is that infrastructure — built before the market has a name for it.
