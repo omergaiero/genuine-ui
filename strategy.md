@@ -70,6 +70,30 @@ Every new customer improves the intelligence for everyone. This is a network eff
 
 ---
 
+## ICP by Data Maturity — [TO BE DISCUSSED]
+
+> **Status:** proposal, not decided. Sharpens the ICP above by segmenting customers by their current data + design-system maturity, and defining what we do and do NOT do for each tier.
+
+Customers arrive at different maturity points. The product serves two of them identically at the *product* level — the SDK, engine, and dashboard are the same. What differs is time-to-value.
+
+| Tier | Customer has | What we do | Time to first value |
+|---|---|---|---|
+| **1 — Full** | DS + behavioral analytics | Plug in and adapt from day 1. Both Jobs (adapt UI + design intelligence) operational immediately. This is the ICP. | Days |
+| **2 — Cold-start** | DS only (no analytics tool) | SDK becomes the data layer from day 1. Cold-start uses systematic exploration + best-practice defaults. Adaptations mature over weeks as behavioral signals accumulate. | Weeks |
+| **3 — Not yet** | No DS (with or without data) | Anti-ICP. DS is the hard prerequisite — no tokens to vary means nothing to adapt. Come back when your team has one. | N/A |
+
+**What we explicitly do NOT do:**
+- Build design systems for customers (that's a months-long design engagement, not a SaaS product)
+- Replace analytics tools like Amplitude/Mixpanel (our SDK captures what we need — but we're not competing on analytics depth)
+- Serve customers without a design system at all (nothing to render adaptations against)
+
+**Open questions to resolve before locking:**
+- Is Tier 2 realistically sellable? Buyers without an analytics tool may not yet feel the pain that drives adoption.
+- Should we source cold-start seed data from third-party providers (Clearbit, ZoomInfo) for *active signals* (role, industry, device)? Or keep it simple and rely on onboarding questions?
+- Does "systematic exploration" (multi-armed bandit variants during cold-start) need a distinct dashboard mode, or does it live under the same rule-configuration UI?
+
+---
+
 ## Competitive Position
 
 | Competitor | What they do | The gap |
