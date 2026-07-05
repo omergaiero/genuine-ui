@@ -168,9 +168,11 @@ Every adaptation produces a labeled training example. Every customer's loop impr
 
 | User stage | Adaptation basis | Precision |
 |---|---|---|
-| New user | Active signals + general profiles | Moderate |
-| Developing user | Emerging behavioral patterns | Rising |
+| New user | Active signals + similar-user profiles derived from this product's existing users | Moderate |
+| Developing user | Emerging behavioral patterns (personal) | Rising |
 | Established user | Full behavioral + qualitative profile | High |
+
+**Within-customer cross-user cold start.** A new user arriving at a Tier 1 customer's product doesn't get a generic experience while the system waits for behavioral data. The system infers their likely profile from their active signals (role, device, use case) matched against clusters of the customer's *existing* users. Day-one adaptation without personal history — because we already learned from users like them.
 
 The product's value compounds with time. Longer customer = better product for their users. Retention mechanic is built in.
 

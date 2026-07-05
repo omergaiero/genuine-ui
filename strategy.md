@@ -78,7 +78,7 @@ Customers arrive at different maturity points. The product serves two of them id
 
 | Tier | Customer has | What we do | Time to first value |
 |---|---|---|---|
-| **1 — Full** | DS + behavioral analytics | Plug in and adapt from day 1. Both Jobs (adapt UI + design intelligence) operational immediately. This is the ICP. | Days |
+| **1 — Full** | DS + behavioral analytics | Plug in and adapt from day 1. Both Jobs (adapt UI + design intelligence) operational immediately. **New users get adapted UI from their very first session** — the system infers their profile from patterns learned from this product's existing users, so day-one users aren't stuck with a generic experience. This is the ICP. | Days |
 | **2 — Cold-start** | DS only (no analytics tool) | SDK becomes the data layer from day 1. Cold-start uses systematic exploration + best-practice defaults. Adaptations mature over weeks as behavioral signals accumulate. | Weeks |
 | **3 — Not yet** | No DS (with or without data) | Anti-ICP. DS is the hard prerequisite — no tokens to vary means nothing to adapt. Come back when your team has one. | N/A |
 
